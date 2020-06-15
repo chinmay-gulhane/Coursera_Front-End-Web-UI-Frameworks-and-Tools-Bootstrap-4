@@ -34,8 +34,9 @@
             </div>
             <!-- Model code button  -->
             <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-            <span class="fa fa-sign-in"></span> Login</a>
+            <!-- <a data-toggle="modal" data-target="#loginModal"> doing this using js js trigger code for triggering model written at model -->
+            <span class="fa fa-sign-in" id="login"> Login</span> 
+        </a>
             </span>     
         </div>
     </nav>
@@ -91,7 +92,8 @@
                 <div class="col-3 col-sm align-self-center">
                     <!-- Toolkit code from data-toggle - "toolkit" to data-plaxement="bottom and you also need to add a script to activate the toolkit , check page bottom  -->
                     <!-- Assignment 3 toolkit removed and model inserted -->
-                    <a href="#reserveModal" data-toggle="modal" class="btn btn-warning btn-lg btn-block" role="button" >Reserve Table</a>
+                    <!-- <a href="#reserveModal" data-toggle="modal" class="btn btn-warning btn-lg btn-block" role="button" >Reserve Table</a> doing this with js -->
+                    <button id="reserveButton" class="btn btn-warning btn-lg btn-block" role="button">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -386,6 +388,24 @@ $("#carouselButton").click(function(){
         $("#carouselButton").children("span").addClass('fa-pause');                    
     }
 });
+</script>
+
+<!-- Login model trigger -->
+<script>
+    $(document).ready(function(){
+      $("#login").click(function(){
+        $("#loginModal").modal();
+      });
+    });
+</script>
+
+<!-- Reserve model triggrt  -->
+<script>
+    $(document).ready(function(){
+      $("#reserveButton").click(function(){
+        $("#reserveModal").modal();
+      });
+    });
 </script>
 
 </body>
