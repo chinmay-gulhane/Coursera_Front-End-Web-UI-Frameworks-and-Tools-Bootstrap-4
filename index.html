@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
         
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -86,10 +86,10 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-3 col-sm align-self-center">
+                <div class="col-6 col-lg-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-3 col-sm align-self-center">
+                <div class="col-lg-3  align-self-center">
                     <!-- Toolkit code from data-toggle - "toolkit" to data-plaxement="bottom and you also need to add a script to activate the toolkit , check page bottom  -->
                     <!-- Assignment 3 toolkit removed and model inserted -->
                     <!-- <a href="#reserveModal" data-toggle="modal" class="btn btn-warning btn-lg btn-block" role="button" >Reserve Table</a> doing this with js -->
@@ -190,7 +190,7 @@
         <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner text-center " role="listbox">
 
                         <div class="carousel-item active">
                             <img class="d-block img-fluid"
@@ -201,6 +201,8 @@
                                     <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                                 </div>
                         </div>
+
+
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
                                 src="img/buffet.png" alt="buffet">
@@ -354,60 +356,9 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Script for activating toolkit -->
-    <!-- <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script> -->
-
-    <!-- Script for pause and play button function of carousel -->
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-        });
-    </script>
-
-<!-- Modifying carousels control button -->
-<script>
-$("#carouselButton").click(function(){
-    if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-        $("#mycarousel").carousel('pause');
-        $("#carouselButton").children("span").removeClass('fa-pause');
-        $("#carouselButton").children("span").addClass('fa-play');
-    }
-    else if ($("#carouselButton").children("span").hasClass('fa-play')){
-        $("#mycarousel").carousel('cycle');
-        $("#carouselButton").children("span").removeClass('fa-play');
-        $("#carouselButton").children("span").addClass('fa-pause');                    
-    }
-});
-</script>
-
-<!-- Login model trigger -->
-<script>
-    $(document).ready(function(){
-      $("#login").click(function(){
-        $("#loginModal").modal();
-      });
-    });
-</script>
-
-<!-- Reserve model triggrt  -->
-<script>
-    $(document).ready(function(){
-      $("#reserveButton").click(function(){
-        $("#reserveModal").modal();
-      });
-    });
-</script>
-
+    <script src="js/scripts.js"></script>
+    
+    
 </body>
 
 </html>
